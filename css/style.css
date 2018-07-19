@@ -9544,6 +9544,12 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+@media (min-width: 991px) {
+  #main-header .port-item {
+    padding: 3em !important;
+  }
+}
+
 @media (min-width: 1199px) {
   #main-header .port-item {
     padding: 4em !important;

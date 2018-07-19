@@ -9,6 +9,7 @@
       crossorigin="anonymous">
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
       crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
    <link rel="stylesheet" href="css/style.css">
    <title>Bootstrap 4 Theme</title>
 </head>
@@ -108,6 +109,67 @@
          </div>
       </div>
 
+      <!-- RESUME -->
+      <div id="resume" class="collapse">
+         <div class="card card-body bg-success text-white py-5">
+            <h2>My Resume</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, accusamus!</p>
+         </div>
+         <div class="card card-body py-5">
+            <h3>Where Have I Worked?</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur, unde.</p>
+            <div class="card-deck">
+               <div class="card">
+                  <div class="card-body">
+                     <h4 class="card-title">Dev Masters</h4>
+                     <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, tempore.</p>
+                     <p class="p-2 mb-4 bg-dark text-white">
+                        Position: Full Stack Developer
+                     </p>
+                     <p class="p-2 mb-4 bg-dark text-white">
+                        Phone: (122) 123-1234
+                     </p>
+                  </div>
+                  <div class="card-footer">
+                     <h6 class="text-muted">Dates: 2015-2018</h6>
+                  </div>
+
+               </div>
+               <div class="card">
+                  <div class="card-body">
+                     <h4 class="card-title">123 Designs</h4>
+                     <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, tempore.</p>
+                     <p class="p-2 mb-4 bg-dark text-white">
+                        Position: Web Designer
+                     </p>
+                     <p class="p-2 mb-4 bg-dark text-white">
+                        Phone: (555) 555-5555
+                     </p>
+                  </div>
+                  <div class="card-footer">
+                     <h6 class="text-muted">Dates: 2014-2015</h6>
+                  </div>
+               </div>
+               <div class="card">
+                  <div class="card-body">
+                     <h4 class="card-title">Click Pros</h4>
+                     <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet, tempore.</p>
+                     <p class="p-2 mb-4 bg-dark text-white">
+                        Position: Full Stack Developer
+                     </p>
+                     <p class="p-2 mb-4 bg-dark text-white">
+                        Phone: (999) 999-9999
+                     </p>
+                  </div>
+                  <div class="card-footer">
+                     <h6 class="text-muted">Dates: 2010-2013</h6>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
       <footer id="main-footer" class="p-5 bg-dark text-white">
          <div class="row">
             <div class="col">
@@ -130,10 +192,15 @@
       crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
       crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
+   <!-- Custom JavaScript / jQuery -->
    <script>
-      // Get the current year for copyright
-      $('#year').text(new Date().getFullYear());
+
+      // Close open accordions on opening another accordion
+      $('.port-item').click(function () {
+         $('.collapse').collapse('hide');
+      });
    </script>
 </body>
 

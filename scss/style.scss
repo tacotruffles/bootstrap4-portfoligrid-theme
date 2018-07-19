@@ -42,10 +42,18 @@
    }
 }
 
+@media(min-width: 991px) {
+   #main-header {
+      .port-item {
+         padding: 3em !important; // For large screens - collapse buttons need a bit of padding
+      }
+   }
+}
+
 @media(min-width: 1199px) {
    #main-header {
       .port-item {
-         padding: 4em !important; // For larger screens - collapse buttons need a bit of padding
+         padding: 4em !important; // For xtra-larg screens - collapse buttons need a bit of padding
       }
    }
 }

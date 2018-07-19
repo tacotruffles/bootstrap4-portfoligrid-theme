@@ -1,2 +1,51 @@
 // Import Boostrap SCSS for compiling from single SCSS file...this file!
 @import "bootstrap";
+
+#main-header {
+   img {
+      width: 100%;
+      height: 100%;
+   }
+
+   .bg-black {
+      color: white;
+      background-color: black;
+   }
+
+   .port-item {
+      width: 30%;
+
+      &:hover {
+         opacity: 0.8;
+         cursor: pointer;
+      }
+   }
+}
+
+/*
+   MEDIA QUERIES
+*/
+@media(max-width: 768px) {
+   #main-header {
+      h1 {
+         width: 100%;
+         text-align: center;
+      }
+
+      p.title {
+         text-align: center;
+      };
+   }
+
+   #main-footer {
+      text-align: center;
+   }
+}
+
+@media(min-width: 1199px) {
+   #main-header {
+      .port-item {
+         padding: 4em !important; // For larger screens - collapse buttons need a bit of padding
+      }
+   }
+}

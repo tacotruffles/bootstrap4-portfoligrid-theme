@@ -78,7 +78,7 @@
 
       <!-- HOME -->
       <div id="home" class="collapse show">
-         <div class="card card-body bg-primary text-white py-5">
+         <div class="card card-body card-flat bg-primary text-white py-5">
             <h2>Welcome To My Page</h2>
             <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, accusamus!</p>
          </div>
@@ -111,7 +111,7 @@
 
       <!-- RESUME -->
       <div id="resume" class="collapse">
-         <div class="card card-body bg-success text-white py-5">
+         <div class="card card-body card-flat bg-success text-white py-5">
             <h2>My Resume</h2>
             <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, accusamus!</p>
          </div>
@@ -170,6 +170,68 @@
 
       </div>
 
+      <!-- WORK SECTION -->
+      <div id="work" class="collapse">
+         <div class="card card-body card-flat bg-warning text-white py-5">
+            <h2>My Work</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, accusamus!</p>
+            <div class="row no-gutters">
+               <div class="col-md-3">
+                  <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox">
+                     <img src="https://unsplash.it/600.jpg?image=252" class="img-fluid" alt="">
+                  </a>
+               </div>
+               <div class="col-md-3">
+                  <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox">
+                     <img src="https://unsplash.it/600.jpg?image=253" class="img-fluid" alt="">
+                  </a>
+               </div>
+               <div class="col-md-3">
+                  <a href="https://unsplash.it/1200/768.jpg?image=254" data-toggle="lightbox">
+                     <img src="https://unsplash.it/600.jpg?image=254" class="img-fluid" alt="">
+                  </a>
+               </div>
+               <div class="col-md-3">
+                  <a href="https://unsplash.it/1200/768.jpg?image=255" data-toggle="lightbox">
+                     <img src="https://unsplash.it/600.jpg?image=255" class="img-fluid" alt="">
+                  </a>
+               </div>
+            </div>
+            <div class="row no-gutters">
+               <div class="col-md-3">
+                  <a href="https://unsplash.it/1200/768.jpg?image=256" data-toggle="lightbox">
+                     <img src="https://unsplash.it/600.jpg?image=256" class="img-fluid" alt="">
+                  </a>
+               </div>
+               <div class="col-md-3">
+                  <a href="https://unsplash.it/1200/768.jpg?image=257" data-toggle="lightbox">
+                     <img src="https://unsplash.it/600.jpg?image=257" class="img-fluid" alt="">
+                  </a>
+               </div>
+               <div class="col-md-3">
+                  <a href="https://unsplash.it/1200/768.jpg?image=258" data-toggle="lightbox">
+                     <img src="https://unsplash.it/600.jpg?image=258" class="img-fluid" alt="">
+                  </a>
+               </div>
+               <div class="col-md-3">
+                  <a href="https://unsplash.it/1200/768.jpg?image=259" data-toggle="lightbox">
+                     <img src="https://unsplash.it/600.jpg?image=259" class="img-fluid" alt="">
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <!-- CONTACT SECTION -->
+      <div id="contact" class="collapse">
+         <div class="card card-body card-flat bg-danger text-white py-5">
+            <h2>Contact Me</h2>
+            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, accusamus!</p>
+         </div>
+      </div>
+
+
+      <!-- FOOTER SECTION -->
       <footer id="main-footer" class="p-5 bg-dark text-white">
          <div class="row">
             <div class="col">
@@ -200,6 +262,12 @@
       // Close open accordions on opening another accordion
       $('.port-item').click(function () {
          $('.collapse').collapse('hide');
+      });
+
+      // Init Ekko Lightbox
+      $(document).on('click', '[data-toggle="lightbox"]', function (e) {
+         e.preventDefault();
+         $(this).ekkoLightbox();
       });
    </script>
 </body>

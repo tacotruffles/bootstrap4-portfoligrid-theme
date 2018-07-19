@@ -22,6 +22,12 @@
    }
 }
 
+#home, #resume, #work, #contact {
+   .card.card-flat {
+      border-radius: 0px;
+      border: none;
+    }
+}
 /*
    MEDIA QUERIES
 */
